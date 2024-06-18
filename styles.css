@@ -123,3 +123,10 @@ aside {
         flex-direction: column;
     }
 }
+
+@media all and (max-width: 500px) {
+    .group {
+        display: flex;
+        flex-direction: column;
+    }
+}
