@@ -106,6 +106,9 @@ aside {
 }
 
 @media all and (max-width: 900px) {
+    body {
+        background-color: #FED702;
+    }
     .content {
         flex-direction: column;
         width: 100%;
@@ -125,6 +128,10 @@ aside {
 }
 
 @media all and (max-width: 500px) {
+    body {
+        background-color: black;
+    }
+
     .group {
         display: flex;
         flex-direction: column;
