@@ -28,17 +28,13 @@ body{
     flex-direction: row;
 }
 
-.logo {
+.logo, .social {
     background-color: #EA5455;
-    width: 20%;
+    flex: 1 1 auto
 }
 .nav {
     background-color: #EA5455;
-    width: 60%;
-}
-.social {
-    background-color: #EA5455;
-    width: 20%;
+    flex: 4 1 auto;
 }
 
 .banner {
@@ -61,7 +57,8 @@ body{
 
 .content-all {
     background-color: #4E4D6A;
-    width: 100%;
+    width: 75%;
+    /* width: 100%;  */
     /* display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -106,4 +103,23 @@ aside {
 
 .pie {
     background-color: #EFE78C;
+}
+
+@media all and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content-all {
+        width: 95%;
+    }
+
+    .aside {
+        width: 95%;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
 }
